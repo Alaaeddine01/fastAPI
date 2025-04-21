@@ -2,9 +2,9 @@
 
 BOOKS = [
 
-    {'title':'java_programming','author':'john','price':23.00},
-    {'title':'python_programming','author':'john','price':20.00},
-    {'title':'php_programming','author':'jack','price':23.00},
-    {'title':'go_programming','author':'roby','price':21.00},
+    {'title':'java_programming','author':'alaa eddine','category':'programming','price':23.00},
+    {'title':'python_programming','author':'john','category':'programming','price':20.00},
+    {'title':'maths analysis','author':'jack','category':'maths','price':23.00},
+    {'title':'maths algebra','author':'roby','category':'maths','price':21.00},
 
 ]
