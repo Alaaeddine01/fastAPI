@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="dd3e6a08-93cc-4b5d-9624-616482225a66" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/books.py" beforeDir="false" afterPath="$PROJECT_DIR$/books.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1745143691168</updated>
       <workItem from="1745143692266" duration="5842000" />
-      <workItem from="1745229817559" duration="1741000" />
+      <workItem from="1745229817559" duration="2905000" />
     </task>
     <servers />
   </component>
@@ -91,6 +90,6 @@
     <option name="version" value="3" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/FastAPIProjetDemo$FastAPIProjetDemo.coverage" NAME="FastAPIProjetDemo Coverage Results" MODIFIED="1745231524113" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/FastAPIProjetDemo$FastAPIProjetDemo.coverage" NAME="FastAPIProjetDemo Coverage Results" MODIFIED="1745233279491" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
