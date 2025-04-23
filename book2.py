@@ -17,7 +17,7 @@ class Book:
         self.price = price
 
 class BookRequest(BaseModel):
-    id: Optional[int]=None
+    id: Optional[int]=Field(description='id is not needed for create',default=None)
     title: str = Field(min_length=3)
     author: str = Field(min_length=3)
     price: float = Field(gt=0,lt=100)
@@ -44,6 +44,36 @@ async def create_book(book:BookRequest):
     new_book = Book(**book.model_dump())
 
     BOOKS.append(find_book_id(new_book))
+
+@app.get("/api/books/{book_id}")
+async def read_book_by_id(book_id:int):
+    for book in BOOKS:
+        if book.id == book_id:
+            return book
+        break
+
+@app.get("/api/books/")
+async def read_book_by_price(price:float):
+    books_returned = []
+    for book in BOOKS:
+        if book.price == price:
+            books_returned.append(book)
+    return books_returned
+@app.put("/api/books/update-book")
+async def update_book(book:BookRequest):
+    for i in range(len(BOOKS)):
+        if BOOKS[i].id == book.id:
+            BOOKS[i]=book
+
+@app.delete("/api/book/{id}")
+async def delete_book_by_id(id:int):
+    for i in range(len(BOOKS)):
+        if BOOKS[i].id == id:
+            BOOKS.pop(i)
+            break
+
+
+
 
 
 
