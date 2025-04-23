@@ -76,7 +76,7 @@ async def delete_book_by_id(id:int=Path(gt=0)):
             break
 
 @app.get("/api/publish/")
-async def filter_by_published_date(published_date:int):
+async def filter_by_published_date(published_date:int=Query(gt=2020,lt=2030)):
     books_returned = []
     for book in BOOKS:
         if book.published_date == published_date:
