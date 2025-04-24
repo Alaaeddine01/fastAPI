@@ -65,7 +65,7 @@ async def read_book_by_price(price:float=Query(gt=0,lt=200)):
         if book.price == price:
             books_returned.append(book)
     return books_returned
-@app.put("/api/books/update-book")
+@app.put("/api/books/update-book", status_code=status.HTTP_204_NO_CONTENT)
 async def update_book(book:BookRequest):
     book_updated = False
     for i in range(len(BOOKS)):
