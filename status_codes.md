@@ -6,6 +6,7 @@
 ## Redirection : Further action must be complete
 # 4XX
 ## Client Error: an error was caused by the client
+
 # 5XX
 ## Server Error: an error occurred on the server
 
